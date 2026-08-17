@@ -1,3 +1,10 @@
+# TODO:
+- eval function
+- models durchlaufen lassen
+- dataset available machen
+- experiment 2: averaging function
+- create new 8 fps dataset
+  
 # action_recognition data set
 https://rose1.ntu.edu.sg/dataset/actionRecognition/ 
 
