@@ -1,8 +1,15 @@
 # TODO:
 - end model durchlaufen lassen
+- create new dataset for experiment 3
 - dataset available machen
 - experiment 2: evaluation
-- create new dataset for experiment 3
+
+experiment 3: 
+- connect dataset
+- training loop
+- run model
+- eval
+- visualize
 
 # Dataset 
 The preprocessed data is available via One Drive: 
