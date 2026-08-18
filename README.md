@@ -1,9 +1,9 @@
 # TODO:
-- eval function
-- models durchlaufen lassen
+- end model durchlaufen lassen
 - dataset available machen
-- experiment 2: averaging function
-- create new 8 fps dataset
+- experiment 2: evaluation
+- create new dataset for experiment 3
+
 # Dataset 
 The preprocessed data is available via One Drive: 
 
