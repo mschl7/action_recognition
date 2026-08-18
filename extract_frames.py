@@ -8,13 +8,14 @@ import shutil
 """
     Extract single frame from videos. 
     Change frame_pos to decide which frames gets saved.
-    Change OUTPUT_FOLDER name.
+    Change OUTPUT_FOLDER name and suffix.
 """
 
 ##### change befor executing #####
 
 OUTPUT_FOLDER = Path("end_frame")    
 frame_pos = 4/4  # as franction
+suffix = "end"
 
 ##################################
 
@@ -95,7 +96,7 @@ with tempfile.TemporaryDirectory() as temp_dir:
             # save temp images
             temp_class_dir = (temp_dir /"frames" / class_name)
             temp_class_dir.mkdir(parents=True, exist_ok=True)
-            output_name = (video_path.stem + "_ending.jpg")
+            output_name = (video_path.stem + f"_{suffix}.jpg")
             output_path = (temp_class_dir / output_name)
             cv2.imwrite(str(output_path), frame)
             images_by_class[class_name].append( output_path)

@@ -5,6 +5,7 @@ import tempfile
 import zipfile
 from pathlib import Path
 import cv2
+import numpy as np
 
 
 """
@@ -24,7 +25,7 @@ OUTPUT_FOLDER = (
 )
 
 # settings
-FPS = 8
+TARGET_FRAMES = 16 # möglicherweise auch kleinere Anzahl, falls Videos zu kurz
 IMAGE_WIDTH = 224
 IMAGE_HEIGHT = 224
 TRAIN_RATIO = 0.70
@@ -63,50 +64,49 @@ def extract_frames(video_path, output_dir):
 
     video = cv2.VideoCapture(str(video_path))
 
-    original_fps = video.get(cv2.CAP_PROP_FPS)
+    total_frames = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
 
-    # get approximately 8 FPS
-    frame_interval = original_fps / FPS
-    next_frame_to_save = 0.0
-    frame_number = 0
+    if total_frames == 0:
+        video.release()
+        return False
+
+    # calculate exactly 16 indices per video
+    indices = np.linspace(0, total_frames - 1, TARGET_FRAMES, dtype=int)
+
     saved_frames = 0
-
-    while True:
+    for idx in indices:
+        video.set(cv2.CAP_PROP_POS_FRAMES, idx)
         success, frame = video.read()
 
         if not success:
-            break
+            continue
 
-        # save frames at approximately 8 FPS
-        if frame_number >= next_frame_to_save:
+        # resize 
+        frame = cv2.resize(
+            frame,
+            (
+                IMAGE_WIDTH,
+                IMAGE_HEIGHT
+            ),
+            interpolation=cv2.INTER_AREA
+        )
 
-            # resize 
-            frame = cv2.resize(
-                frame,
-                (
-                    IMAGE_WIDTH,
-                    IMAGE_HEIGHT
-                ),
-                interpolation=cv2.INTER_AREA
-            )
+        output_path = (
+            output_dir /
+            f"frame_{saved_frames + 1:05d}.jpg"
+        )
 
-            output_path = (
-                output_dir /
-                f"frame_{saved_frames + 1:05d}.jpg"
-            )
+        cv2.imwrite(
+            str(output_path),
+            frame,
+            [
+                cv2.IMWRITE_JPEG_QUALITY,
+                95
+            ]
+        )
 
-            cv2.imwrite(
-                str(output_path),
-                frame,
-                [
-                    cv2.IMWRITE_JPEG_QUALITY,
-                    95
-                ]
-            )
-
-            saved_frames += 1
-            next_frame_to_save += frame_interval
-        frame_number += 1
+        saved_frames += 1
+          
     video.release()
 
     if saved_frames == 0:
