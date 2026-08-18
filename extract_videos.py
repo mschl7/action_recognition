@@ -25,7 +25,7 @@ OUTPUT_FOLDER = (
 )
 
 # settings
-TARGET_FRAMES = 16 # möglicherweise auch kleinere Anzahl, falls Videos zu kurz
+TARGET_FRAMES = 8 # möglicherweise auch kleinere Anzahl, falls Videos zu kurz
 IMAGE_WIDTH = 224
 IMAGE_HEIGHT = 224
 TRAIN_RATIO = 0.70
