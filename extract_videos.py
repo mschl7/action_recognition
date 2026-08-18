@@ -9,7 +9,7 @@ import numpy as np
 
 
 """
-    - Extract frames from videos at 8 FPS
+    - Extract 16 frames per video
     - change to 224x224 format
     - Split in train, test and val
     - Saved in data/ video_frames_data
@@ -17,7 +17,7 @@ import numpy as np
 
 #folders
 PROJECT_ROOT = Path(__file__).resolve().parent
-INPUT_FOLDER = Path("../action_recognition_data")     
+INPUT_FOLDER = Path("action_recognition_data")     
 OUTPUT_FOLDER = (
     PROJECT_ROOT /
     "data" /
@@ -58,6 +58,7 @@ for split in ["train", "val", "test"]:
 
 # get frames
 def extract_frames(video_path, output_dir):
+    print("extracting frames")
     output_dir.mkdir(
         parents=True,
         exist_ok=True)
@@ -115,7 +116,7 @@ def extract_frames(video_path, output_dir):
 
 # split
 def split_videos(videos):
-
+    print("splitting")
     videos = list(videos)
     random.shuffle(videos)
     number_of_videos = len(videos)
@@ -133,7 +134,6 @@ def split_videos(videos):
     }
 
 def count_frames(frame_directory):
-
     return len(
         list(
             frame_directory.glob(
@@ -243,7 +243,6 @@ with tempfile.TemporaryDirectory() as temp:
                     "split":split,
                     "frame_dir":str(relative_frame_dir),
                     "num_frames":num_frames,
-                    "fps":FPS,
                     "width":IMAGE_WIDTH,
                     "height":IMAGE_HEIGHT
                 })
@@ -269,7 +268,6 @@ with open(
         "split",
         "frame_dir",
         "num_frames",
-        "fps",
         "width",
         "height"
     ]
