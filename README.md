@@ -7,10 +7,10 @@
 # Dataset 
 The preprocessed data is available via One Drive: 
 
-https://1drv.ms/f/c/3c5d2eafc311e6b9/IgBBv41owHx1TIs_KUAPCz55Acx94Pcv3LSePSYM5IZuKIM?email=gsammet%40uni-osnabrueck.de&e=x7D1bU 
+https://1drv.ms/f/c/3c5d2eafc311e6b9/IgBBv41owHx1TIs_KUAPCz55ATC5fNC1SIYtKsirEPiz0Zc?e=SetmlO
 
-To get access write an email to mschlichting@uni-osnabrueck.de
-  
+Password: SimonSaysPassword  
+
 # action_recognition data set
 https://rose1.ntu.edu.sg/dataset/actionRecognition/ 
 
