@@ -2,6 +2,7 @@
 Milena:
 - hyperparameter tuning weiter machen
 - report schreiben (exp 1, 2)
+
 Gwen: 
 - run model & save
 - eval & visualize
