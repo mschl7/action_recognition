@@ -1,10 +1,11 @@
 # TO DO:
-experiment 3: 
-- connect dataset
-- training loop
-- run model
-- eval
-- visualize
+Milena:
+- hyperparameter tuning weiter machen
+- report schreiben (exp 1, 2)
+Gwen: 
+- run model & save
+- eval & visualize
+- improve model?
 
 # Dataset 
 The preprocessed data is available via One Drive: 
