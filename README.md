@@ -1,6 +1,4 @@
 # TO DO:
-- experiment 2: evaluation
-
 experiment 3: 
 - connect dataset
 - training loop
