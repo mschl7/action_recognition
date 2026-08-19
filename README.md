@@ -7,6 +7,9 @@ Gwen:
 - run model & save
 - eval & visualize
 - improve model?
+          - maybe use smaler learning rate or higher hidden size of GRU
+          - maybe unfreeze part of ResNet18
+  
 
 # Report
 https://docs.google.com/document/d/1EHlWB1kaFbsrDrVdBpF13478EIWYvswGZPGW32Z1Cxk/edit?usp=sharing 
