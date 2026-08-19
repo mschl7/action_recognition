@@ -8,6 +8,9 @@ Gwen:
 - eval & visualize
 - improve model?
 
+# Report
+https://docs.google.com/document/d/1EHlWB1kaFbsrDrVdBpF13478EIWYvswGZPGW32Z1Cxk/edit?usp=sharing 
+
 # Dataset 
 The preprocessed data is available via One Drive: 
 
