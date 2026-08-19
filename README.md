@@ -1,7 +1,4 @@
-# TODO:
-- end model durchlaufen lassen
-- create new dataset for experiment 3
-- dataset available machen
+# TO DO:
 - experiment 2: evaluation
 
 experiment 3: 
