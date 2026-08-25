@@ -1,11 +1,9 @@
 # TO DO:
 - nochmal mit verändertem datenset?
 - visualisierungen am ende von alles modeln
+- code cleanen (naming conventions, überschriften etc., bei expeeriment 3 noch probleme mit data loader)
 - report schreiben
   
-Milena:
-- report schreiben (exp 1, 2)
-
 Gwen: 
 - eval & visualize
 - improve model? -> (maybe use smaler learning rate or higher hidden size of GRU)
