@@ -1,4 +1,8 @@
 # TO DO:
+- nochmal mit verändertem datenset?
+- visualisierungen am ende von alles modeln
+- report schreiben
+  
 Milena:
 - report schreiben (exp 1, 2)
 
