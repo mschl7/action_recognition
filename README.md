@@ -5,6 +5,7 @@ Milena:
 Gwen: 
 - eval & visualize
 - improve model? -> (maybe use smaler learning rate or higher hidden size of GRU)
+- unfreeze whole ResNet18 and run on PC in Lab
 
 
 - datenset verbesser
