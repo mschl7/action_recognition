@@ -1,6 +1,6 @@
 # TO DO:
+- checkpoint save anpassen!!!!!
 - nochmal mit verändertem datenset?
-- checkpoint file checken
   
 - visualisierungen am ende von allen modeln
 - code cleanen (naming conventions, überschriften etc., bei expeeriment 3 noch probleme mit data loader)
