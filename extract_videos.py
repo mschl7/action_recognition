@@ -9,7 +9,7 @@ import numpy as np
 
 
 """
-    - Extract 16 frames per video
+    - Extract 8 frames per video
     - change to 224x224 format
     - Split in train, test and val
     - Saved in data/ video_frames_data
@@ -71,7 +71,7 @@ def extract_frames(video_path, output_dir):
         video.release()
         return False
 
-    # calculate exactly 16 indices per video
+    # calculate exactly 8 indices per video
     indices = np.linspace(0, total_frames - 1, TARGET_FRAMES, dtype=int)
 
     saved_frames = 0
