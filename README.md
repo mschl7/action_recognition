@@ -3,18 +3,9 @@
 - nochmal mit verändertem datenset?
   
 - visualisierungen am ende von allen modeln
-- code cleanen (naming conventions, überschriften etc., bei expeeriment 3 noch probleme mit data loader)
+- code cleanen 
 - report schreiben
-
-Gwen: 
-- eval & visualize
-- unfreeze whole ResNet18 and run on PC in Lab
-
-
-- datenset verbesser
-- größeres resnet
-- gru (oder lstm) verbessern?
-  
+- Gwen's Models (die besten/wichtigsten) mit reinnehmen
 
   
 
