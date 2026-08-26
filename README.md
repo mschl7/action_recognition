@@ -1,6 +1,6 @@
 # TO DO:
 - nochmal mit verändertem datenset?
-- visualisierungen am ende von alles modeln
+- visualisierungen am ende von allen modeln
 - code cleanen (naming conventions, überschriften etc., bei expeeriment 3 noch probleme mit data loader)
 - report schreiben
   
