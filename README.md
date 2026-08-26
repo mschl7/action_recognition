@@ -1,11 +1,12 @@
 # TO DO:
 - nochmal mit verändertem datenset?
+- checkpoint file checken
+  
 - visualisierungen am ende von allen modeln
 - code cleanen (naming conventions, überschriften etc., bei expeeriment 3 noch probleme mit data loader)
 - report schreiben
-  
+
 Gwen: 
-- checkpoint file
 - eval & visualize
 - unfreeze whole ResNet18 and run on PC in Lab
 
