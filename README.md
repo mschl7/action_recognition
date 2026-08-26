@@ -1,7 +1,6 @@
 # TO DO:
-- checkpoint save anpassen!!!!!
-- nochmal mit verändertem datenset?
-  
+- datenset richtig hochlanden end_frame
+- gru + unfrozen anpassen und laufen lassen  
 - visualisierungen am ende von allen modeln
 - code cleanen 
 - report schreiben
