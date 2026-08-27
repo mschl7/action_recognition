@@ -1,3 +1,4 @@
 /data
 /action_recognition_data
 /.venv
+/checkpoints/model1c_checkpoint.pth
