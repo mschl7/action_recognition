@@ -1,10 +1,12 @@
 # TO DO:
-- datenset richtig hochlanden end_frame
 - gru + unfrozen anpassen und laufen lassen  
 - visualisierungen am ende von allen modeln
 - code cleanen 
 - report schreiben
 - Gwen's Models (die besten/wichtigsten) mit reinnehmen
+- model mit 16 frames laufen lassen?
+- model unfrozen layer 4 oder alles laufen lassen?
+- beste: hyperparameter tuning anpassen, bzw. richtig machen! --> zwei verschiedene optimizer
 
   
 
