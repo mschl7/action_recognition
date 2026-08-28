@@ -1,0 +1,42 @@
+total_acc = [
+    acc_model1a,
+    acc_model1b,
+    acc_model1b, ###change
+    acc_model2,
+    acc_model3,
+    acc_model4,
+    ####change !!!!!!!!!!!!!!
+    acc_model1a, 
+    acc_model1b,
+    acc_model1b
+]
+labels = ["1a",
+    "1b",
+    "1c",
+    "2",
+    "3",
+    "4",
+    "5a",
+    "5b",
+    "5c"]
+
+colors = ["#6d9eeb"] * 3 + ["#93c47d"] * 3 + ["#e06666"] * 3
+
+plt.figure(figsize=(8, 5))
+bars = plt.bar(labels, total_acc, color= colors)
+
+plt.ylabel("Accuracy")
+plt.title("Overall Accuracy")
+plt.ylim(0, 1)
+
+# Add values above bars
+for bar, acc in zip(bars, total_acc):
+    plt.text(
+        bar.get_x() + bar.get_width() / 2,
+        bar.get_height() + 0.01,
+        f"{acc:.2%}",
+        ha="center"
+    )
+
+plt.tight_layout()
+plt.show()
