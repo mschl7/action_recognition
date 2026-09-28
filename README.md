@@ -27,7 +27,7 @@ Frame
        temporal     temporal     temporal
        classifier   classifier   classifier
           │            │            │
-        WAVE         CLAP        SALUTE
+        ACTION 1     ACTION 2     ACTION 3
 
 ## New Approach 2
 - transformer
