@@ -3,11 +3,11 @@ https://rose1.ntu.edu.sg/dataset/actionRecognition/
 
 ## New Approach
 Frame
--> Person Boxes
+- Person Boxes
   - pre-trained detector
--> Skeletal Data Detector
+- Skeletal Data Detector
   - upper body is enough
--> Action Classifier
+- Action Classifier
   - Sequential time data (last 5-10 frames)
   - or single picture
--> 1 class per person
+- 1 class per person
